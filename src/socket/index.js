@@ -7,7 +7,7 @@ const options = {
   transports: ["websocket"],
 };
 
-const socket = io("http://localhost:3001", options);
+const socket = io("https://myweight.twiling.ru:3001", options);
 // const socket = io("http://websocket.aksakova.keenetic.name", options);
 // const socket = io("http://192.168.1.57:3001", options);
 
