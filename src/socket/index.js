@@ -7,7 +7,7 @@ const options = {
   transports: ["websocket"],
 };
 
-const socket = io("https://myweight.twiling.ru:3000", options);
+const socket = io("https://myweight.twiling.ru", options);
 // const socket = io("http://websocket.aksakova.keenetic.name", options);
 // const socket = io("http://192.168.1.57:3001", options);
 
