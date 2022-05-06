@@ -11,10 +11,12 @@ const Room = () => {
   return (
     <div className={s.root}>
       <h1>Room {roomID}</h1>
-      {clients.map((clientID) => {
-        return (
-          <div key={clientID}>
+      <div className={s.video}>
+        {clients.map((clientID) => {
+          return (
+            // <div key={clientID}>
             <video
+              key={clientID}
               ref={(instance) => {
                 provideMediaRef(clientID, instance);
               }}
@@ -22,9 +24,10 @@ const Room = () => {
               playsInline
               muted={clientID === LOCAL_VIDEO}
             />
-          </div>
-        );
-      })}
+            // </div>
+          );
+        })}
+      </div>
     </div>
   );
 };
